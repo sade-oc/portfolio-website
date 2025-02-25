@@ -1,28 +1,113 @@
-#skills {
-   max-width: 600px;
-   margin: 20px auto;
+:root {
+   --floral-white: #fbfbf2;
+   --platinum: #e5e6e4;
+   --timberwolf: #cfd2cd;
+   --silver: #a6a2a2;
+   --taupe-gray: #847577;
+}
+/* General Styles */
+body {
+   font-family: Arial, sans-serif;
+   margin: 0;
+   padding: 0;
+   background-color: var(--floral-white);
+   color: var(--taupe-gray);
+}
+
+h1, h2, h3 {
+   color: var(--silver);
+}
+
+/* Header Styles */
+header {
+   background-color: var(--platinum);
+   padding: 20px;
+   text-align: center;
+}
+
+nav ul {
+   list-style: none;
+   padding: 0;
+}
+
+nav ul li {
+   display: inline;
+   margin: 0 15px;
+}
+
+nav ul li a {
+   text-decoration: none;
+   color: var(--taupe-gray);
+   font-weight: bold;
+}
+
+.intro {
+   margin: 20px 0;
+}
+
+/* Profile Image */
+.profile-img {
+   border-radius: 50%;
+   width: 150px;
+   height: 150px;
+}
+
+/* Main Section Styles */
+main {
    padding: 20px;
 }
 
+h2 {
+   border-bottom: 2px solid var(--silver);
+   padding-bottom: 10px;
+}
+
+/* About Section Styles */
+.education-experience {
+   margin: 20px 0;
+}
+
+.experience {
+   margin: 10px 0;
+}
+
+/* Skills Section */
+#Skills {
+   margin: 20px 0;
+}
+
 .skill {
-   margin-bottom: 15px;
+   margin: 10px 0;
 }
 
 .progress-bar {
-   width: 100%;
-   background-color: #e0e0e0;
+   background-color: var(--timberwolf);
    border-radius: 5px;
-   overflow: hidden;
-   box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+   width: 100%;
+   height: 20px;
 }
 
 .progress {
-   background: linear-gradient(to right, #007bff, #0056b3);
-   color: white;
-   text-align: center;
-   padding: 5px;
-   font-weight: bold;
+   background-color: var(--silver);
+   height: 100%;
    border-radius: 5px;
-   width: 0; /* JavaScript will animate this */
-   transition: width 1.5s ease-in-out;
+}
+
+/* Projects Section */
+.project {
+   margin: 20px 0;
+   padding: 10px;
+   border: 1px solid var(--silver);
+   border-radius: 5px;
+}
+
+/* Contact Section */
+.contact {
+   margin: 20px 0;
+}
+
+.social-links a {
+   margin: 0 10px;
+   text-decoration: none;
+   color: var(--taupe-gray);
 }

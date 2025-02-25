@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+  <!--! Head Section-->
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,7 +8,10 @@
     <link rel="stylesheet" href="css/style.css" />
     <script src="js/script.js"></script>
   </head>
+
+  <!--! Body Section-->
   <body>
+    <!--! Header Section-->
     <header>
       <nav>
         <ul>
@@ -17,41 +21,52 @@
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
-      <h1>Hi, I'm Sade!</h1>
-      <h1>Software Engineer</h1>
-      <p>
-        Full Stack Developer with a passion for building scalable and efficient
-        software solutions.
-      </p>
+      <div class="intro">
+        <h1>Hi, I'm Sade!</h1>
+        <h1>Software Engineer</h1>
+        <p>
+          Full Stack Developer with a strong foundation in software engineering,
+          data analysis, and cloud computing. Passionate about building scalable
+          solutions and solving complex problems.
+        </p>
+        <!--TODO: Create download cv button-->
+        <a href="documents/cv.pdf" download class="cv-btn">Download CV</a>
+      </div>
+
       <!-- TODO: Add image of myself -->
-      <!--TODO: Create download cv button-->
+      <img src="images/Portfolio-picture.png" alt="Sade" class="profile-img" />
     </header>
+
+    <!--! Main Section-->
     <main>
       <!-- !About Section -->
       <section id="about">
         <h2>About Me</h2>
+        <p>
+          I am a Computer Science student at City University of London with
+          experience in software development, data analysis, and cloud
+          computing. My expertise spans full-stack web development, working with
+          Java, Python, JavaScript, and SQL. I enjoy problem-solving, continuous
+          learning, and contributing to impactful projects.
+        </p>
+
         <div class="education-experience">
           <h3>Education &amp; Experience</h3>
 
           <div class="experience">
             <p><strong>2023 - Present</strong></p>
-            <p><strong>Computer Science, City University of London</strong></p>
             <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et,
-              alias eveniet sapiente eos expedita veniam cupiditate
-              exercitationem obcaecati, quibusdam ut commodi. Vitae reiciendis
-              delectus ducimus placeat repellat voluptatem dolorum sapiente!
+              <strong>BScComputer Science, City University of London</strong>
             </p>
-          </div>
-
-          <div class="experience">
-            <p><strong>Summer 2024</strong></p>
-            <p><strong>Data Science Intern, Howden Re</strong></p>
             <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et,
-              alias eveniet sapiente eos expedita veniam cupiditate
-              exercitationem obcaecati, quibusdam ut commodi. Vitae reiciendis
-              delectus ducimus placeat repellat voluptatem dolorum sapiente!
+              Currently pursuing a degree in Computer Science, achieving a
+              First-Class grade across all completed modules. Key coursework
+              includes Data Structures &amp; Algorithms (C++), Programming in
+              Java, Databases, and Object-Oriented Analysis &amp; Design. I have
+              maintained a First-Class average throughout, with a strong passion
+              for problem-solving, mathematical concepts, and software
+              development, particularly in Data Structures &amp; Algorithms,
+              Mathematics, and Java Programming.
             </p>
           </div>
 
@@ -59,10 +74,25 @@
             <p><strong>2022 - Present</strong></p>
             <p><strong>Social Media Strategist, Time To Stay</strong></p>
             <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut ad
-              deserunt consectetur magni repellendus sapiente excepturi nulla
-              voluptatibus quisquam quo aliquid, alias, modi illum esse
-              explicabo! Doloribus veniam ad repellendus?
+              - Developed data-driven social media strategies to enhance
+              audience engagement. <br />
+              - Utilized analytics tools to track and optimize campaign
+              performance. <br />
+              - Created compelling content and managed scheduling across
+              multiple platforms.
+            </p>
+          </div>
+
+          <div class="experience">
+            <p><strong>Summer 2024</strong></p>
+            <p><strong>Data Science Intern, Howden Re</strong></p>
+            <p>
+              - Performed exploratory data analysis (EDA) on insurance metrics
+              using Python and Pandas. <br />
+              - Analyzed reinsurance acceptance rates, ratios, and insurance
+              density to generate strategic insights. <br />
+              - Collaborated with the Business Intelligence team to visualize
+              key data points.
             </p>
           </div>
         </div>
@@ -72,16 +102,16 @@
           <h3>Skills</h3>
 
           <div class="skill">
-            <p>HTML</p>
+            <p>Java</p>
             <div class="progress-bar">
-              <div class="progress" style="width: 70%"></div>
+              <div class="progress" style="width: 80%"></div>
             </div>
           </div>
 
           <div class="skill">
-            <p>Java</p>
+            <p>Python</p>
             <div class="progress-bar">
-              <div class="progress" style="width: 75%"></div>
+              <div class="progress" style="width: 65%"></div>
             </div>
           </div>
 
@@ -91,6 +121,13 @@
               <div class="progress" style="width: 75%"></div>
             </div>
           </div>
+
+          <div class="skill">
+            <p>JavaScript</p>
+            <div class="progress-bar">
+              <div class="progress" style="width: 60%"></div>
+            </div>
+          </div>
         </section>
       </section>
 
@@ -98,19 +135,30 @@
       <section id="projects">
         <h2>Projects</h2>
         <div class="project">
-          <img src="images/finance-app.png" alt="Personal Finance Web App" />
-          <h3>Personal Finance Web App</h3>
+          <h3>Personal Finance Web Application</h3>
           <p>
-            A web application to track expenses and manage budgets using
-            JavaScript and React.
+            Developed a Python and SQL-based web application to track personal
+            finance by calculating balances and managing inflows and outflows.
+            Implemented additional features, such as a wish list function that
+            informs users of the impact of potential purchases on their balance.
+          </p>
+          <p>
+            <strong>Skills Utilized:</strong> Python, SQL, HTML, CSS, Flask, Web
+            Development
           </p>
         </div>
         <div class="project">
-          <img src="images/music-db.png" alt="SQL Music Streaming Database" />
-          <h3>SQL Music Streaming Database</h3>
+          <h3>Java Game Development: 2D Platformer Game</h3>
           <p>
-            Designed a relational database to store and manage music streaming
-            data.
+            Developed a 2D platformer game using Java and the City Engine
+            physics library, featuring interactive game mechanics and
+            AI-controlled enemies. Implemented collision detection, health
+            regeneration, projectile firing, and scoring systems, creating a
+            fully functional and engaging game.
+          </p>
+          <p>
+            <strong>Skills Utilized:</strong> Java, Git/GitHub, Game
+            Development, Physics Libraries, Object-Oriented Programming
           </p>
         </div>
       </section>
@@ -118,9 +166,9 @@
       <!-- !Contact Section -->
       <section id="contact">
         <h2>Contact Me</h2>
-        <p>Feel free to reach out via email or social media.</p>
+        <p>Let's connect! Feel free to reach out via email or social media</p>
 
-        <form action="https://formspree.io/f/{your-form-id}" method="POST">
+        <form action="https://formspree.io/f/xyzkqllj" method="POST">
           <label for="name">Name:</label>
           <input type="text" id="name" name="name" required />
 
@@ -134,8 +182,14 @@
         </form>
 
         <div class="social-links">
+          <a href="mailto:s.onitiricoker@gmail.com">Email</a>
           <a href="https://github.com/sade-oc" target="_blank">GitHub</a>
-          <a href="https://linkedin.com/in/sade-oc" target="_blank">LinkedIn</a>
+          <a
+            href="https://www.linkedin.com/in/sade-onitiri-coker-b78201319/"
+            target="_blank"
+          >
+            LinkedIn
+          </a>
         </div>
       </section>
     </main>
